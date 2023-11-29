@@ -1,0 +1,6 @@
+Flask
+Flask-Session
+python-dotenv
+werkzeug
+requests
+msal
