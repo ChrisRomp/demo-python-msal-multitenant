@@ -8,7 +8,7 @@ APP_OBJECT_ID = os.getenv("APP_OBJECT_ID")
 
 # You can configure your authority via environment variable
 # Defaults to a multi-tenant app in world-wide cloud
-AUTHORITY = os.getenv("AUTHORITY", "https://login.microsoftonline.com/common")
+AUTHORITY = os.getenv("AUTHORITY", "https://login.microsoftonline.com/organizations")
 
 REDIRECT_PATH = "/getAToken"  # Used for forming an absolute URL to your redirect URI.
 # The absolute URL must match the redirect URI you set
