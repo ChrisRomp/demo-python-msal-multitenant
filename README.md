@@ -9,3 +9,5 @@ The [src/svc](src/svc) directory is a Python application that will access the us
 Within the Azure directory there will exist an App Registration in the source tenant as well as an Enterprise Application.
 
 In the user tenant's directory there will only exist the Enterprise Application, aka Service Principal. All of the authentication secrets are managed in the source tenant.
+
+I have also built a similar example in Go: https://github.com/ChrisRomp/demo-golang-msal-multitenant
