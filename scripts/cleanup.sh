@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Run `az login` first as a user with appropriate permissions.
+
 # Load env
 source $CODESPACE_VSCODE_FOLDER/.env
 

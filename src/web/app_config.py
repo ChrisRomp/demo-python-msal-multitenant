@@ -21,7 +21,7 @@ ENDPOINT = 'https://graph.microsoft.com/v1.0/users'  # This resource requires no
 # You can find the proper permission names from this document
 # https://docs.microsoft.com/en-us/graph/permissions-reference
 # using offline_access to get refresh token for additional scopes
-SCOPE = ["User.ReadBasic.All", "Application.Read.All"]
+SCOPE = [".default"]
 # SCOPE = ["https://management.azure.com/.default"]
 
 # Tells the Flask-session extension to store sessions in the filesystem

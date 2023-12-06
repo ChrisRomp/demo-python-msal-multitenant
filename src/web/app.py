@@ -7,7 +7,7 @@ import uuid
 
 import app_config
 
-__version__ = "0.8.0"  # The version of this sample, for troubleshooting purpose
+__version__ = "0.8.1"  # The version of this sample, for troubleshooting purpose
 
 app = Flask(__name__)
 app.config.from_object(app_config)
@@ -52,7 +52,7 @@ def refresh_token(scopes):
 @app.route("/auth")
 def auth():
     redirect_uri = arm_auth.get_authorization_request_url(
-        scopes=arm_auth_scopes,
+        scopes=[".default"],
         redirect_uri=url_for("process_auth", _external=True),
         state="12345" # don't do this in prod
     )
